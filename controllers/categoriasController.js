@@ -88,3 +88,10 @@ export const eliminarCategoria = async (req, res) => {
     res.status(500).json({ mensaje: "Error al eliminar categoria", error });
   }
 };
+
+// Alias para compatibilidad con rutas genéricas
+export const crear = crearCategoria;
+export const obtenerTodos = obtenerCategorias;
+export const obtenerUno = obtenerCategoria;
+export const actualizar = actualizarCategoria;
+export const eliminar = eliminarCategoria;

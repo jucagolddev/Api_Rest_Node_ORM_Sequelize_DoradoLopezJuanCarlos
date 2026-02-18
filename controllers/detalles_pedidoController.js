@@ -88,3 +88,10 @@ export const eliminarDetalles_pedid = async (req, res) => {
     res.status(500).json({ mensaje: "Error al eliminar detalles_pedido", error });
   }
 };
+
+// Alias para compatibilidad con rutas genéricas
+export const crear = crearDetalles_pedid;
+export const obtenerTodos = obtenerDetalles_pedido;
+export const obtenerUno = obtenerDetalles_pedid;
+export const actualizar = actualizarDetalles_pedid;
+export const eliminar = eliminarDetalles_pedid;

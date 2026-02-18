@@ -88,3 +88,10 @@ export const eliminarCliente = async (req, res) => {
     res.status(500).json({ mensaje: "Error al eliminar cliente", error });
   }
 };
+
+// Alias para compatibilidad con rutas genéricas
+export const crear = crearCliente;
+export const obtenerTodos = obtenerClientes;
+export const obtenerUno = obtenerCliente;
+export const actualizar = actualizarCliente;
+export const eliminar = eliminarCliente;

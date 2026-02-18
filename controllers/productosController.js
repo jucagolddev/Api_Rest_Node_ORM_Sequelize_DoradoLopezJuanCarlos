@@ -88,3 +88,10 @@ export const eliminarProducto = async (req, res) => {
     res.status(500).json({ mensaje: "Error al eliminar producto", error });
   }
 };
+
+// Alias para compatibilidad con rutas genéricas
+export const crear = crearProducto;
+export const obtenerTodos = obtenerProductos;
+export const obtenerUno = obtenerProducto;
+export const actualizar = actualizarProducto;
+export const eliminar = eliminarProducto;
